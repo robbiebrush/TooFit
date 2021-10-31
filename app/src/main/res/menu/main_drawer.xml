@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="nav_view">
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_first"
-            android:title="First One" />
+            android:id="@+id/nav_main"
+            android:title="Main" />
+        <item
+            android:id="@id/nav_proteins"
+            android:title="Proteins" />
     </group>
 </menu>

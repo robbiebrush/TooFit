@@ -3,10 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@layout/activity_main">
+    app:startDestination="@id/nav_main">
     <fragment
-        android:id="@+id/nav_first"
-        android:name="com.example.toofit.BlankFragment"
-        android:label="Nothing yet"
-        tools:layout="@layout/fragment_blank" />`
+        android:id="@+id/nav_main"
+        android:name="com.example.toofit.MainFragment"
+        android:label="TooFit"
+        tools:layout="@layout/fragment_main" />`
+    <fragment
+        android:id="@+id/nav_proteins"
+        android:name="com.example.toofit.MainFragment"
+        android:label="Proteins"
+        tools:layout="@layout/fragment_proteins" />`
 </navigation>
