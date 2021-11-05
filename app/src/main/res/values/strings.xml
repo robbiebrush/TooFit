@@ -5,4 +5,19 @@
     <string name="nav_header_subtitle">Nutritional Categories</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greetingText1">Welcome to TooFit</string>
+    <string name="greetingText2">Fill out the fields below to use the Body Transformation Tool.</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="desiredWeight">Desired Weight:</string>
+    <string name="desiredMuscle">Desired Muscle Definition:</string>
+    <string name="extreme">Extreme</string>
+    <string name="very">Very</string>
+    <string name="average">Average</string>
+    <string name="getPlan">Get Plan</string>
+    <string name="proteins">Proteins</string>
+    <string name="grains">Grains</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="fruits">Fruits</string>
+    <string name="dairy">Dairy</string>
 </resources>
