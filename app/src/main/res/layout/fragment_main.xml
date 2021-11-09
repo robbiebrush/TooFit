@@ -137,7 +137,7 @@
             android:layout_height="wrap_content"
             android:text="@string/getPlan"
             android:gravity="center"
-            android:paddingBottom="15dp"/>
+            android:paddingBottom="20dp"/>
     </LinearLayout>
 
     <LinearLayout

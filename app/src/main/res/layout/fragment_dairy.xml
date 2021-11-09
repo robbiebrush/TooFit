@@ -8,21 +8,21 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ProteinsFragment"
+        tools:context=".DairyFragment"
         android:orientation="vertical"
         android:background="@color/white">
 
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/proteinsFacts"
-            android:name="com.example.toofit.RecyclerView.ProteinsFactFragment"
-            tools:layout="@layout/fragment_proteins_fact"
+            android:id="@+id/dairyFacts"
+            android:name="com.example.toofit.RecyclerView.DairyFactFragment"
+            tools:layout="@layout/fragment_dairy_fact"
             android:paddingTop="20dp"
             android:paddingBottom="20dp" />
 
         <TextView
-            android:id="@+id/proteinExamples"
+            android:id="@+id/dairyExamples"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/options"

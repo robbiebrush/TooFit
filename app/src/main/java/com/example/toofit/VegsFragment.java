@@ -13,10 +13,10 @@ import com.example.toofit.ViewPager.CustomViewPageAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProteinsFragment#newInstance} factory method to
+ * Use the {@link VegsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProteinsFragment extends Fragment {
+public class VegsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class ProteinsFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private int pic;
 
-    public ProteinsFragment() {
+    public VegsFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +39,8 @@ public class ProteinsFragment extends Fragment {
      * @return A new instance of fragment ProteinsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProteinsFragment newInstance(String param1, String param2) {
-        ProteinsFragment fragment = new ProteinsFragment();
+    public static VegsFragment newInstance(String param1, String param2) {
+        VegsFragment fragment = new VegsFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PIC, fragment.pic);
         fragment.setArguments(args);
@@ -59,7 +59,7 @@ public class ProteinsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_proteins, container, false);
+        View view = inflater.inflate(R.layout.fragment_vegs, container, false);
         viewPager2 = view.findViewById(R.id.exPicViewPager);
         viewPager2.setAdapter(new CustomViewPageAdapter(getActivity()));
         return view;

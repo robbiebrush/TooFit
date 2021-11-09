@@ -11,7 +11,27 @@
         tools:layout="@layout/fragment_main" />`
     <fragment
         android:id="@+id/nav_proteins"
-        android:name="com.example.toofit.MainFragment"
+        android:name="com.example.toofit.ProteinsFragment"
         android:label="Proteins"
         tools:layout="@layout/fragment_proteins" />`
+    <fragment
+        android:id="@+id/nav_grains"
+        android:name="com.example.toofit.GrainsFragment"
+        android:label="Grains"
+        tools:layout="@layout/fragment_grains" />`
+    <fragment
+        android:id="@+id/nav_vegetables"
+        android:name="com.example.toofit.VegsFragment"
+        android:label="Vegetables"
+        tools:layout="@layout/fragment_vegs" />
+    <fragment
+        android:id="@+id/nav_fruits"
+        android:name="com.example.toofit.FruitsFragment"
+        android:label="Fruits"
+        tools:layout="@layout/fragment_fruits" />
+    <fragment
+        android:id="@+id/nav_dairy"
+        android:name="com.example.toofit.DairyFragment"
+        android:label="Dairy"
+        tools:layout="@layout/fragment_dairy" />
 </navigation>

@@ -10,5 +10,17 @@
         <item
             android:id="@id/nav_proteins"
             android:title="Proteins" />
+        <item
+            android:id="@id/nav_grains"
+            android:title="Grains" />
+        <item
+            android:id="@id/nav_vegetables"
+            android:title="Vegetables" />
+        <item
+            android:id="@id/nav_fruits"
+            android:title="Fruits" />
+        <item
+            android:id="@id/nav_dairy"
+            android:title="Dairy" />
     </group>
 </menu>
