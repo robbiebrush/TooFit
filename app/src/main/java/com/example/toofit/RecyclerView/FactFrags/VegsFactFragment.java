@@ -1,4 +1,4 @@
-package com.example.toofit.RecyclerView;
+package com.example.toofit.RecyclerView.FactFrags;
 
 import android.os.Bundle;
 
@@ -11,15 +11,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.toofit.R;
+import com.example.toofit.RecyclerView.CustomRecyclerViewAdapter;
+import com.example.toofit.RecyclerView.Fact;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link GrainsFactFragment#newInstance} factory method to
+ * Use the {@link VegsFactFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class GrainsFactFragment extends Fragment {
+public class VegsFactFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +32,7 @@ public class GrainsFactFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public GrainsFactFragment() {
+    public VegsFactFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +42,11 @@ public class GrainsFactFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment GrainsFactFragment.
+     * @return A new instance of fragment VegFactFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static GrainsFactFragment newInstance(String param1, String param2) {
-        GrainsFactFragment fragment = new GrainsFactFragment();
+    public static VegsFactFragment newInstance(String param1, String param2) {
+        VegsFactFragment fragment = new VegsFactFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,9 +66,9 @@ public class GrainsFactFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_grains_fact, container, false);
+        View view = inflater.inflate(R.layout.fragment_vegs_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
-        facts.add(new Fact("What do they do?", "Grain"));
+        facts.add(new Fact("What do they do?", "Veg"));
         facts.add(new Fact("Why are they needed?", ""));
         facts.add(new Fact("How much should I have daily?", ""));
         facts.add(new Fact("Tips", ""));

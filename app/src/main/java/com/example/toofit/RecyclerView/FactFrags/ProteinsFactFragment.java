@@ -1,4 +1,4 @@
-package com.example.toofit.RecyclerView;
+package com.example.toofit.RecyclerView.FactFrags;
 
 import android.os.Bundle;
 
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.toofit.R;
+import com.example.toofit.RecyclerView.CustomRecyclerViewAdapter;
+import com.example.toofit.RecyclerView.Fact;
 
 import java.util.ArrayList;
 
@@ -67,7 +69,7 @@ public class ProteinsFactFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_proteins_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
         facts.add(new Fact("What do they do?", "Protein"));
-        facts.add(new Fact("Why are they needed?", ""));
+        facts.add(new Fact("Why are they needed?", "hgffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"));
         facts.add(new Fact("How much should I have daily?", ""));
         facts.add(new Fact("Tips", ""));
         RecyclerView recyclerView = view.findViewById(R.id.factRecyclerView);

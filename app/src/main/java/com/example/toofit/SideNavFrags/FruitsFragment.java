@@ -1,4 +1,4 @@
-package com.example.toofit;
+package com.example.toofit.SideNavFrags;
 
 import android.os.Bundle;
 
@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.toofit.R;
 import com.example.toofit.ViewPager.CustomViewPageAdapter;
 
 /**

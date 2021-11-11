@@ -8,7 +8,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".GrainsFragment"
+        tools:context=".SideNavFrags.GrainsFragment"
         android:orientation="vertical"
         android:background="@color/white">
 
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/grainsFacts"
-            android:name="com.example.toofit.RecyclerView.GrainsFactFragment"
+            android:name="com.example.toofit.RecyclerView.FactFrags.GrainsFactFragment"
             tools:layout="@layout/fragment_grains_fact"
             android:paddingTop="20dp"
             android:paddingBottom="20dp" />

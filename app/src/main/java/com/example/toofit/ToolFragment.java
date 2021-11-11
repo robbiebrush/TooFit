@@ -1,25 +1,19 @@
-package com.example.toofit.RecyclerView;
+package com.example.toofit;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.toofit.R;
-
-import java.util.ArrayList;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link VegsFactFragment#newInstance} factory method to
+ * Use the {@link ToolFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class VegsFactFragment extends Fragment {
+public class ToolFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +24,7 @@ public class VegsFactFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public VegsFactFragment() {
+    public ToolFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +34,11 @@ public class VegsFactFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment VegFactFragment.
+     * @return A new instance of fragment ToolFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static VegsFactFragment newInstance(String param1, String param2) {
-        VegsFactFragment fragment = new VegsFactFragment();
+    public static ToolFragment newInstance(String param1, String param2) {
+        ToolFragment fragment = new ToolFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,16 +58,7 @@ public class VegsFactFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_vegs_fact, container, false);
-        ArrayList<Fact> facts = new ArrayList<>();
-        facts.add(new Fact("What do they do?", "Veg"));
-        facts.add(new Fact("Why are they needed?", ""));
-        facts.add(new Fact("How much should I have daily?", ""));
-        facts.add(new Fact("Tips", ""));
-        RecyclerView recyclerView = view.findViewById(R.id.factRecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),
-                LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(new CustomRecyclerViewAdapter(facts));
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_tool, container, false);
     }
 }
