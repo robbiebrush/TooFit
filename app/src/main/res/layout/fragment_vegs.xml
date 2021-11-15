@@ -8,7 +8,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".VegsFragment"
+        tools:context=".SideNavFrags.VegsFragment"
         android:orientation="vertical"
         android:background="@color/white">
 
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/vegsFacts"
-            android:name="com.example.toofit.RecyclerView.VegsFactFragment"
+            android:name="com.example.toofit.RecyclerView.FactFrags.VegsFactFragment"
             tools:layout="@layout/fragment_vegs_fact"
             android:paddingTop="20dp"
             android:paddingBottom="20dp" />

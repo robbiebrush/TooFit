@@ -8,34 +8,46 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ProteinsFragment"
+        tools:context=".SideNavFrags.ProteinsFragment"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:padding="10dp">
 
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/proteinsFacts"
-            android:name="com.example.toofit.RecyclerView.ProteinsFactFragment"
+            android:name="com.example.toofit.RecyclerView.FactFrags.ProteinsFactFragment"
             tools:layout="@layout/fragment_proteins_fact"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
-
-        <TextView
-            android:id="@+id/proteinExamples"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/options"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="20dp"/>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/exPicViewPager"
+            android:paddingBottom="30dp" />
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingBottom="20dp"/>
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/proteinExamples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/options"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/exPicViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

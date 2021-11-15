@@ -1,4 +1,4 @@
-package com.example.toofit.RecyclerView;
+package com.example.toofit.RecyclerView.FactFrags;
 
 import android.os.Bundle;
 
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.toofit.R;
+import com.example.toofit.RecyclerView.CustomRecyclerViewAdapter;
+import com.example.toofit.RecyclerView.Fact;
 
 import java.util.ArrayList;
 
