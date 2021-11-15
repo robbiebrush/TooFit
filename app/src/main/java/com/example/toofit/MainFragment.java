@@ -1,5 +1,6 @@
 package com.example.toofit;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.google.android.gms.actions.ReserveIntents;
 import com.google.android.material.snackbar.Snackbar;
 
 /**
@@ -68,7 +70,9 @@ public class MainFragment extends Fragment {
         webButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+                String query = "https://food-guide.canada.ca/en/";
+                intent.putExtra(SearchManager.QUERY, query);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{
@@ -94,7 +98,7 @@ public class MainFragment extends Fragment {
         cabButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(ReserveIntents.ACTION_RESERVE_TAXI_RESERVATION);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{
