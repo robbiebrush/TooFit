@@ -8,17 +8,21 @@
         android:id="@+id/nav_main"
         android:name="com.example.toofit.MainFragment"
         android:label="TooFit"
-        tools:layout="@layout/fragment_main" />`
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_settings"
+            app:destination="@id/nav_settings" />
+    </fragment>
     <fragment
         android:id="@+id/nav_proteins"
         android:name="com.example.toofit.ProteinsFragment"
         android:label="Proteins"
-        tools:layout="@layout/fragment_proteins" />`
+        tools:layout="@layout/fragment_proteins" />
     <fragment
         android:id="@+id/nav_grains"
         android:name="com.example.toofit.GrainsFragment"
         android:label="Grains"
-        tools:layout="@layout/fragment_grains" />`
+        tools:layout="@layout/fragment_grains" />
     <fragment
         android:id="@+id/nav_vegetables"
         android:name="com.example.toofit.VegsFragment"
@@ -34,4 +38,9 @@
         android:name="com.example.toofit.DairyFragment"
         android:label="Dairy"
         tools:layout="@layout/fragment_dairy" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.toofit.ListView.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings"/>
 </navigation>

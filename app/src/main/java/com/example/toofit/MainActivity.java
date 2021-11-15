@@ -1,20 +1,24 @@
 package com.example.toofit;
 
+import android.app.FragmentManager;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
-
+import com.example.toofit.ListView.SettingsFragment;
 import com.example.toofit.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_main, R.id.nav_proteins, R.id.nav_grains, R.id.nav_vegetables,
-                R.id.nav_fruits, R.id.nav_dairy)
+                R.id.nav_fruits, R.id.nav_dairy, R.id.nav_settings)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -50,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    //@Override
+    //public boolean onOptionsItemSelected(MenuItem item) {
+    //   if (item.getItemId() == R.id.settings) {
+
+     ///   }
+
+   // }
 
     @Override
     public boolean onSupportNavigateUp() {
