@@ -70,9 +70,8 @@ public class MainFragment extends Fragment {
         webButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-                String query = "https://food-guide.canada.ca/en/";
-                intent.putExtra(SearchManager.QUERY, query);
+                Uri webpage = Uri.parse("https://food-guide.canada.ca/en/");
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{
