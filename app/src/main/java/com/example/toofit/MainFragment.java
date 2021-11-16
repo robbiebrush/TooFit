@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -146,6 +147,14 @@ public class MainFragment extends Fragment {
                 }else{
                     Snackbar.make(getView(), "No app installed", Snackbar.LENGTH_SHORT).show();
                 }
+            }
+        });
+        Button planButt = view.findViewById(R.id.planButton);
+        planButt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view)
+                        .navigate(R.id.action_main_to_plan);
             }
         });
         return view;

@@ -8,7 +8,11 @@
         android:id="@+id/nav_main"
         android:name="com.example.toofit.MainFragment"
         android:label="TooFit"
-        tools:layout="@layout/fragment_main" />`
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_to_plan"
+            app:destination="@id/nav_tool" />
+    </fragment>
     <fragment
         android:id="@+id/nav_proteins"
         android:name="com.example.toofit.SideNavFrags.ProteinsFragment"
@@ -34,4 +38,9 @@
         android:name="com.example.toofit.SideNavFrags.DairyFragment"
         android:label="Dairy"
         tools:layout="@layout/fragment_dairy" />
+    <fragment
+        android:id="@+id/nav_tool"
+        android:name="com.example.toofit.ToolFragment"
+        android:label="BT Tool"
+        tools:layout="@layout/fragment_tool" />
 </navigation>
