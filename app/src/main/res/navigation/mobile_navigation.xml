@@ -41,9 +41,8 @@
         tools:layout="@layout/fragment_dairy" />
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.toofit.Settings.ListView.SettingsFragment"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings"/>
+        android:name="com.example.toofit.Settings.ListView.WrongSettingsFragment"
+        android:label="Settings" />
     <fragment
         android:id="@+id/nav_tool"
         android:name="com.example.toofit.ToolFragment"
