@@ -17,15 +17,15 @@ public class CustomViewPageAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                 return PicExamplesFragment.newInstance(R.drawable.ic_launcher_background);
+                 return PicExamplesFragment.newInstance(R.drawable.ic_toofitlogo);
             case 1:
                 return PicExamplesFragment.newInstance(R.drawable.ic_baseline_settings_24);
             case 2:
-                return PicExamplesFragment.newInstance(R.drawable.ic_launcher_background);
+                return PicExamplesFragment.newInstance(R.drawable.ic_toofitlogo);
             case 3:
                 return PicExamplesFragment.newInstance(R.drawable.ic_baseline_settings_24);
             default:
-                return PicExamplesFragment.newInstance(R.drawable.ic_launcher_background);
+                return PicExamplesFragment.newInstance(R.drawable.ic_toofitlogo);
         }
     }
 
