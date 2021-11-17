@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_main, R.id.nav_proteins, R.id.nav_grains, R.id.nav_vegetables,
-                R.id.nav_fruits, R.id.nav_dairy, R.id.nav_settings)
+                R.id.nav_fruits, R.id.nav_dairy, R.id.nav_settings, R.id.nav_tool)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -50,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-       if (item.getItemId() == R.id.settings) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.settings) {
 
         }
-        return
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
