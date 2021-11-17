@@ -1,22 +1,17 @@
 package com.example.toofit;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.toofit.ListView.SettingsFragment;
+import com.example.toofit.R;
 import com.example.toofit.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
@@ -50,18 +45,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
-    //@Override
-    //public boolean onOptionsItemSelected(MenuItem item) {
-    //   if (item.getItemId() == R.id.settings) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+       if (item.getItemId() == R.id.settings) {
 
-     ///   }
-
-   // }
+        }
+        return
+    }
 
     @Override
     public boolean onSupportNavigateUp() {

@@ -1,4 +1,4 @@
-package com.example.toofit.ListView;
+package com.example.toofit.Settings.ListView;
 
 public class Item {
     private String name;

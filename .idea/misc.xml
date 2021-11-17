@@ -18,6 +18,7 @@
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/app_bar_main.xml" value="0.16590678824721378" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/content_main.xml" value="0.16590678824721378" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_blank.xml" value="0.16590678824721378" />
+        <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_credits.xml" value="0.1590678824721378" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_dairy.xml" value="0.10733695652173914" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_dairy_fact.xml" value="0.10733695652173914" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_fruits.xml" value="0.10733695652173914" />
@@ -28,10 +29,9 @@
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_pic_examples.xml" value="0.10733695652173914" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_proteins.xml" value="0.17527173913043478" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_proteins_fact.xml" value="0.1590678824721378" />
-        <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_settings.xml" value="0.32019927536231885" />
+        <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_tool.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_vegs.xml" value="0.10235507246376811" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/fragment_vegs_fact.xml" value="0.10235507246376811" />
-        <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/list_item.xml" value="0.32019927536231885" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/nav_header_main.xml" value="0.16590678824721378" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/layout/recycle_row.xml" value="0.10733695652173914" />
         <entry key="..\:/Users/rctbr/OneDrive/Desktop/Fall2021/AndroidDev2/Android2FinalProj/TooFit/app/src/main/res/menu/main.xml" value="0.2462962962962963" />

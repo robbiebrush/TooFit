@@ -1,4 +1,4 @@
-package com.example.toofit.ListView;
+package com.example.toofit.Settings.ListView;
 
 import android.os.Bundle;
 
