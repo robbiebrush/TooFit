@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="green_200">#2eb82e</color>
-    <color name="green_500">#29a329</color>
-    <color name="green_700">#1f7a1f</color>
-    <color name="blue_200">#BFEFFF</color>
-    <color name="blue_700">#72D7FF</color>
+    <color name="green_200">#93c47d</color>
+    <color name="green_500">#93c47d</color>
+    <color name="green_700">#588d3f</color>
+    <color name="blue_200">#b3e6ff</color>
+    <color name="blue_500">#6196ea</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="textColor">#6B6B63</color>
