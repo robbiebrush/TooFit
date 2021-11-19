@@ -1,4 +1,4 @@
-package com.example.toofit.Settings.Settings;
+package com.example.toofit.ListView;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.toofit.ListView.Credit;
 import com.example.toofit.R;
 
 import java.util.ArrayList;

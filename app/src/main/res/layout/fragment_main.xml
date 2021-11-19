@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingHorizontal="5dp"
-            android:paddingTop="40dp"
+            android:paddingTop="30dp"
             android:text="@string/greetingText1"
             android:textColor="@color/textColor"
             android:textSize="32sp"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="30dp"
+            android:paddingTop="20dp"
             android:paddingHorizontal="5dp"
             android:text="@string/greetingText2"
             android:textColor="@color/textColor"
@@ -37,10 +37,11 @@
             android:orientation="vertical"
             android:background="@drawable/border"
             android:layout_gravity="center"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:paddingBottom="10dp">
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="8dp">
 
@@ -58,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:ems="4"
+                    android:ems="3"
                     android:inputType="number"
                     android:textColor="@color/textColor"/>
 
@@ -72,14 +73,70 @@
                     android:textStyle="bold"/>
 
                 <EditText
-                    android:id="@+id/editTextNumber3"
+                    android:id="@+id/heightInput"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:ems="4"
+                    android:ems="3"
                     android:inputType="number"
                     android:textColor="@color/textColor"/>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age:"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ageInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sex:"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right">
+
+                    <RadioButton
+                        android:id="@+id/maleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"/>
+                    <RadioButton
+                        android:id="@+id/femaleRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"/>
+
+                </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
@@ -98,7 +155,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextNumber4"
+                    android:id="@+id/desiredWeightInput"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="4"
@@ -153,6 +210,17 @@
                 android:gravity="center"
                 android:paddingBottom="20dp" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="5dp"
+            android:text="@string/appSummary"
+            android:textColor="@color/textColor"
+            android:textSize="22sp"
+            android:paddingBottom="20dp"/>
 
         <LinearLayout
             android:orientation="horizontal"

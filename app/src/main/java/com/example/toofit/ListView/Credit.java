@@ -1,4 +1,4 @@
-package com.example.toofit.Settings.Settings;
+package com.example.toofit.ListView;
 
 public class Credit {
     private String creditFor;

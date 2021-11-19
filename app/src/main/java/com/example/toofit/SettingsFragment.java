@@ -1,4 +1,4 @@
-package com.example.toofit.Settings.Settings;
+package com.example.toofit;
 
 import android.os.Bundle;
 
