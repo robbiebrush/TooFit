@@ -41,11 +41,16 @@
         tools:layout="@layout/fragment_dairy" />
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.toofit.Settings.ListView.WrongSettingsFragment"
+        android:name="com.example.toofit.Settings.Settings.SettingsFragment"
         android:label="Settings" />
     <fragment
         android:id="@+id/nav_tool"
         android:name="com.example.toofit.ToolFragment"
         android:label="BT Tool"
         tools:layout="@layout/fragment_tool" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.toofit.Settings.Settings.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.toofit.Settings.ListView;
+package com.example.toofit.Settings.Settings;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,9 +14,9 @@ import com.example.toofit.R;
 
 import java.util.ArrayList;
 
-public class CustomListViewAdapter extends ArrayAdapter<Item> {
+public class CustomListViewAdapter extends ArrayAdapter<Credit> {
 
-    public CustomListViewAdapter(@NonNull Context context, ArrayList<Item> items) {
+    public CustomListViewAdapter(@NonNull Context context, ArrayList<Credit> items) {
         super(context, 0, items);
     }
 
@@ -26,8 +26,10 @@ public class CustomListViewAdapter extends ArrayAdapter<Item> {
 
         if(convertView == null){
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
-            TextView fruitName = convertView.findViewById(R.id.itemName);
-            fruitName.setText(getItem(position).getName());
+            TextView creditFor = convertView.findViewById(R.id.creditFor);
+            creditFor.setText(getItem(position).getCreditFor());
+            TextView creditTo = convertView.findViewById(R.id.creditTo);
+            creditTo.setText(getItem(position).getTo());
         }
 
         return convertView;

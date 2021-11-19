@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_main, R.id.nav_proteins, R.id.nav_grains, R.id.nav_vegetables,
-                R.id.nav_fruits, R.id.nav_dairy, R.id.nav_settings, R.id.nav_tool)
+                R.id.nav_fruits, R.id.nav_dairy, R.id.nav_settings, R.id.nav_tool, R.id.nav_credits)
                 .setOpenableLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.settings:
                 navController.navigate(R.id.nav_settings);
+                break;
+            case R.id.credits:
+                navController.navigate(R.id.nav_credits);
                 break;
         }
         return super.onOptionsItemSelected(item);

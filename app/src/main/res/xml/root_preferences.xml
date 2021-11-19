@@ -3,19 +3,19 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <PreferenceCategory app:title="@string/messages_header">
+        <PreferenceCategory app:title="Preferences">
 
             <EditTextPreference
-                app:key="signature"
-                app:title="@string/signature_title"
+                app:key="name"
+                app:title="Name"
                 app:useSimpleSummaryProvider="true" />
 
             <ListPreference
-                app:defaultValue="reply"
-                app:entries="@array/reply_entries"
-                app:entryValues="@array/reply_values"
-                app:key="reply"
-                app:title="@string/reply_title"
+                app:defaultValue="normal"
+                app:entries="@array/font_size_names"
+                app:entryValues="@array/font_size_values"
+                app:key="font"
+                app:title="Font Size"
                 app:useSimpleSummaryProvider="true" />
 
         </PreferenceCategory>

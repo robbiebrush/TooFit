@@ -1,4 +1,4 @@
-package com.example.toofit.Settings.ListView;
+package com.example.toofit.Settings.Settings;
 
 import android.os.Bundle;
 
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link WrongSettingsFragment#newInstance} factory method to
+ * Use the {@link CreditsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class WrongSettingsFragment extends Fragment {
+public class CreditsFragment extends Fragment {
     ListView listView;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,7 +29,7 @@ public class WrongSettingsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public WrongSettingsFragment() {
+    public CreditsFragment() {
         // Required empty public constructor
     }
 
@@ -42,8 +42,8 @@ public class WrongSettingsFragment extends Fragment {
      * @return A new instance of fragment SettingsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static WrongSettingsFragment newInstance(String param1, String param2) {
-        WrongSettingsFragment fragment = new WrongSettingsFragment();
+    public static CreditsFragment newInstance(String param1, String param2) {
+        CreditsFragment fragment = new CreditsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,13 +64,12 @@ public class WrongSettingsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_settings, container, false);
+        View view = inflater.inflate(R.layout.fragment_credits, container, false);
         listView = view.findViewById(R.id.listView);
-        ArrayList<Item> arrayList = new ArrayList<>();
-        arrayList.add(new Item("Account Info"));
-        arrayList.add(new Item("Font Size"));
-        arrayList.add(new Item("App Color"));
-        arrayList.add(new Item("Credits"));
+        ArrayList<Credit> arrayList = new ArrayList<>();
+        arrayList.add(new Credit("Picture here: ", "Momma"));
+        arrayList.add(new Credit("Info here: ", "dfsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"));
+
 
         listView.setAdapter(new CustomListViewAdapter(getContext(), arrayList));
 
