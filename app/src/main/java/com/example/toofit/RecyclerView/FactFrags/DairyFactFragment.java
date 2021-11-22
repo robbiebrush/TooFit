@@ -68,10 +68,16 @@ public class DairyFactFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dairy_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
-        facts.add(new Fact("What do they do?", "Dairy"));
-        facts.add(new Fact("Why are they needed?", ""));
-        facts.add(new Fact("How much should I have daily?", ""));
-        facts.add(new Fact("Tips", ""));
+        facts.add(new Fact("What do they do?", "Dairy products simply provide more of the nutrients we need, and being very high in calcium. Dairy products that are not " +
+                "the low fat versions do contain a high level of saturated fat, which has been linked to increase chance of heart disease, " +
+                "type 2 diabetes, and even Alzheimer's disease. Dairy is also very high in potassium, which the average person lacks the proper " +
+                "amount of."));
+        facts.add(new Fact("Why are they needed?", "Like grains, dairy is not essential. You can obtain reasonable sources of all that dairy provides, elsewhere.\n" +
+                "However, dairy is a fantastic source of calcium, which does strengthen your bones, and prevent some diseases. " +
+                "The high potassium content also helps tremendusly in regulating healthy blood pressure. It is also an easy " +
+                "source of lots of the nutrients we need."));
+        facts.add(new Fact("How much should I have daily?", "You should consume 3 servings daily as an adult, and 2 as a child."));
+        facts.add(new Fact("Tips", "It is recommended to stick with low fat or fat free dairy products, especially if heart disease runs in your gene pool.\n\nProtein supplements can be mixed with dairy products (as well as vegetable or fruit products) to make a quick, high protein meal with some nutritional content ('protein shakes' are not remotely close to true meal supplements due to the very low nutrient density).\n\nCheese goes with anything."));
         RecyclerView recyclerView = view.findViewById(R.id.factRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),
                 LinearLayoutManager.VERTICAL, false));

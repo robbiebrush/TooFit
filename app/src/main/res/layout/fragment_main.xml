@@ -216,7 +216,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingTop="20dp"
-            android:paddingHorizontal="5dp"
+            android:paddingHorizontal="8dp"
             android:text="@string/appSummary"
             android:textColor="@color/textColor"
             android:textSize="22sp"
