@@ -67,16 +67,16 @@ public class ProteinsFactFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_proteins_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
-        facts.add(new Fact("What do they do?", "Proteins are chemical \'building blocks\' called amino acids. They are mainly responsible for building/ repairing muscles and bones. They are also used to create hormones and enzymes, and can beused as an energy source as well."));
+        facts.add(new Fact("What do they do?", "Proteins are chemical \'building blocks\' called amino acids. They are mainly responsible for building/ repairing muscles and bones. They are also used to create hormones and enzymes, and can be used as an energy source as well."));
         facts.add(new Fact("Why are they needed?", "We need proteins to maintain/ grow our bodies' size, strength, physcial endurance, and durability in order to " +
                 "better execute tasks in our lives. When energy is exerted in the contracting or extending of muscles, muscle fibers repsonsible for such actions " +
                 "are ripped and stretched apart. Consumed proteins then have the primary function of filling those gaps with new proteins, growing the muscle in size, " +
                 "strength, etc. This is the same process for bones, relative to their frequency and degree of stress. Creating/ regulating hormones and enzymes also " +
                 "keeps our bodies' and minds' chemically balanced."));
         facts.add(new Fact("How much should I have daily?", "You should consume 0.8g of protein per kg of body weight daily. Therefore, a person 165lbs, should eat 60g of protein a day."));
-        facts.add(new Fact("Tips", "Most protein dense foods are also extremely dense in nutrients and water (beef, steak, chicken, salmon).\n\n" +
-                "When attempting to gain size or strength, one should adopt a high protein diet.\n\n" +
-                "For most, the best way to prepare a high density protein food (meat) is to cook with tons of seasoning, and to base the protein (with " +
+        facts.add(new Fact("Tips", "1. Most protein dense foods are also extremely dense in nutrients and water (beef, steak, chicken, salmon).\n\n" +
+                "2. When attempting to gain size or strength, one should adopt a high protein diet.\n\n" +
+                "3. For most, the best way to prepare a high density protein food (meat) is to cook with tons of seasoning, and to base the protein (with " +
                 "butter, olive oil, apple sauce, etc.)."));
         RecyclerView recyclerView = view.findViewById(R.id.factRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),

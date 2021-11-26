@@ -71,13 +71,13 @@ public class FruitsFactFragment extends Fragment {
         facts.add(new Fact("What do they do?", "Fruits are very similar in function to vegetables. They have a very high nutrient and fiber content that aid our bodies in " +
                 "everything they do. They too are very low in calories. Although, on average, their nutrient densities are slightly lower than vegetables, " +
                 "they also supply a reasonable amount of natural sugars and antioxidants."));
-        facts.add(new Fact("Why are they needed?", "Just like vegetables, we need fruits to keep us healthy and away from illness. The nutrients are majority the same as vegatbles, \n" +
-                " maintaining our bodies in specific ways as well as fuelling the immune system, lowering chanc of chronic disease, stroke," +
+        facts.add(new Fact("Why are they needed?", "Just like vegetables, we need fruits to keep us healthy and away from illness. The nutrients are majority the same as vegetables," +
+                " maintaining our bodies in specific ways as well as fuelling the immune system, lowering chance of chronic disease, stroke," +
                 " and cancer. The natural sugars are good as its a healthy amount, yet we all consume too much sugar regardless. The" +
                 " antioxidants help flush toxins (waste products from bodily functions) out of our bodies quicker. Also contains great" +
                 " fiber for digestion. "));
         facts.add(new Fact("How much should I have daily?", "You should consume 2 to 5 servings of fruits daily."));
-        facts.add(new Fact("Tips", "Personally, some fruits like apples taste great when cooked with a protein like vegetables.\n\nFruits are a great snack substitute to high in sugar defaults (cookies, chocolate, etc.).\n\nAn extreme excess in fruits can result in reverse effects from the antioxidants. "));
+        facts.add(new Fact("Tips", "1. Personally, some fruits like apples taste great when cooked with a protein like vegetables.\n\n2. Fruits are a great snack substitute to high in sugar defaults (cookies, chocolate, etc.).\n\n3. An extreme excess in fruits can result in reverse effects from the antioxidants. "));
         RecyclerView recyclerView = view.findViewById(R.id.factRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),
                 LinearLayoutManager.VERTICAL, false));

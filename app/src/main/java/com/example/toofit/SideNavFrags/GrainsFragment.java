@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.toofit.R;
-import com.example.toofit.ViewPager.CustomViewPageAdapter;
+import com.example.toofit.ViewPager.CustomViewPageAdapterGrain;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,7 +62,7 @@ public class GrainsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_grains, container, false);
         viewPager2 = view.findViewById(R.id.exPicViewPager);
-        viewPager2.setAdapter(new CustomViewPageAdapter(getActivity()));
+        viewPager2.setAdapter(new CustomViewPageAdapterGrain(getActivity()));
         return view;
     }
 }

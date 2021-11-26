@@ -69,15 +69,15 @@ public class VegsFactFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_vegs_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
         facts.add(new Fact("What do they do?", "Vegetables are the most dense source of vitamins and minerals out there. They are very low in fats and calories, and provide" +
-                " virtually every nutrient we need in our body. They also contain high dietary fibre."));
-        facts.add(new Fact("Why are they needed?", "The nutrients provided by vegetables keeps our body healthy and able to fight off illness. Potassium and folate for example, helps\n" +
+                " virtually every nutrient we need in our body. They also contain high dietary fiber."));
+        facts.add(new Fact("Why are they needed?", "The nutrients provided by vegetables keeps our body healthy and able to fight off illness. Potassium and folate for example, helps" +
                 " maintain healthy blood pressure and formation of new blood cells. Vitamin C for example, helps heal wounds and maintains" +
                 " oral health. On top of the specific health benefits from each nutrient, the squad of nutrients consumed with a vegetable" +
                 " substantially improves the immune system, lessening the chances of chronic disease, stroke, cancer, and illness in general." +
-                " Their fibre also greatly improves digestion."));
+                " Their fiber also greatly improves digestion."));
         facts.add(new Fact("How much should I have daily?", "You should consume 2 to 3 cups of vegetables daily as an adult, and if a child can stick out those numbers too, they'll" +
                 " experience nothing but benefits, and possibly a tinted urine colour due to vitamin excess."));
-        facts.add(new Fact("Tips", "Vegetables prepared to any size, can be cooked into any other food and retain its full nutrient density (the juices drawn out during cooking included).\n\nVegetables can be seasoned and fried to taste incredible and retain most of its nutrient density.\n\nIt is very important for pregnant women to consume lots of vegeatbles, as to create/ have the extra blood cells and nutrients to supply the fetus."));
+        facts.add(new Fact("Tips", "1. Vegetables prepared to any size, can be cooked into any other food and retain their full nutrient density (the juices drawn out during cooking included).\n\n2. Vegetables can be seasoned and fried to taste incredible and retain most of its nutrient density.\n\n3. It is very important for pregnant women to consume lots of vegetables, as to create/ have the extra blood cells and nutrients to supply the fetus."));
         RecyclerView recyclerView = view.findViewById(R.id.factRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),
                 LinearLayoutManager.VERTICAL, false));
