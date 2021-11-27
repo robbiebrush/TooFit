@@ -128,8 +128,7 @@
                         android:layout_height="wrap_content"
                         android:text="M"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold"
-                        android:checked="true"/>
+                        android:textStyle="bold" />
                     <RadioButton
                         android:id="@+id/femaleRadio"
                         android:layout_width="wrap_content"
@@ -180,7 +179,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:id="@+id/objectiveInput">
-
+                <RadioButton
+                    android:id="@+id/gainRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gain Muscle"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold" />
                 <RadioButton
                     android:id="@+id/slimRadio"
                     android:layout_width="wrap_content"
@@ -188,14 +193,6 @@
                     android:text="Slim Out"
                     android:textColor="@color/textColor"
                     android:textStyle="bold"/>
-                <RadioButton
-                    android:id="@+id/gainRadio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Gain Muscle"
-                    android:textColor="@color/textColor"
-                    android:textStyle="bold"
-                    android:checked="true"/>
 
             </RadioGroup>
 

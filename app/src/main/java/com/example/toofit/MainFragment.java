@@ -168,10 +168,6 @@ public class MainFragment extends Fragment {
         planButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view)
-                        .navigate(R.id.action_main_to_plan);
-                Bundle bundle = new Bundle();
-
                 String weightStr = weightEdit.getText().toString();
                 int weight = Integer.parseInt(weightStr);
 
@@ -189,34 +185,31 @@ public class MainFragment extends Fragment {
 
                 int checkedObjectiveId = objectiveRadio.getCheckedRadioButtonId();
                 String objective = null;
-
-                if(checkedSexId == -1 || checkedObjectiveId == -1) {
-                    Snackbar.make(getView(), "Please fill out all fields.", Snackbar.LENGTH_SHORT).show();
-                } else {
-                    switch (checkedSexId) {
-                        case R.id.maleRadio:
-                            sex = "male";
-                            break;
-                        case R.id.femaleRadio:
-                            sex = "female";
-                            break;
-                    }
-                    switch (checkedObjectiveId) {
-                        case R.id.slimRadio:
-                            objective = "slim";
-                            break;
-                        case R.id.gainRadio:
-                            objective = "gain";
-                            break;
-                    }
+                switch (checkedSexId) {
+                    case R.id.maleRadio:
+                        sex = "male";
+                        break;
+                    case R.id.femaleRadio:
+                        sex = "female";
+                        break;
                 }
-
+                switch (checkedObjectiveId) {
+                    case R.id.slimRadio:
+                        objective = "slim";
+                        break;
+                    case R.id.gainRadio:
+                        objective = "gain";
+                        break;
+                }
+                Bundle bundle = new Bundle();
                 bundle.putInt("WEIGHT", weight);
                 bundle.putInt("HEIGHT", height);
                 bundle.putInt("AGE", age);
                 bundle.putInt("DESIREDWEIGHT", desiredWeight);
                 bundle.putString("SEX", sex);
                 bundle.putString("OBJECTIVE", objective);
+                Navigation.findNavController(v)
+                        .navigate(R.id.action_main_to_plan, bundle);
             }
         });
         return view;
