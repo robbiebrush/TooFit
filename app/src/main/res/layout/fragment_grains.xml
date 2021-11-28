@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         tools:context=".SideNavFrags.GrainsFragment"
         android:orientation="vertical"
-        android:background="@color/white"
+        android:background="@color/blue_200"
         android:padding="10dp">
 
         <fragment

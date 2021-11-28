@@ -1,7 +1,9 @@
 package com.example.toofit;
 
 import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -14,9 +16,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.google.android.gms.actions.ReserveIntents;
 import com.google.android.material.snackbar.Snackbar;
+
+import javax.xml.namespace.QName;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -30,6 +35,8 @@ public class MainFragment extends Fragment {
     private RadioGroup sexRadio;
     private EditText desiredWeightEdit;
     private RadioGroup objectiveRadio;
+
+    private TextView intro;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -74,6 +81,11 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+
+        SharedPreferences sp = getContext().getSharedPreferences("name", Context.MODE_PRIVATE);
+        String userName = sp.getString("name", "");
+        intro = view.findViewById(R.id.introGreet);
+        intro.setText("Hello" + userName + ", Welcome to TooFit");
 
         weightEdit = view.findViewById(R.id.weightInput);
         heightEdit = view.findViewById(R.id.heightInput);

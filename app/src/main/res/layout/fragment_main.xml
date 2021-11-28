@@ -12,11 +12,12 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/introGreet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingHorizontal="5dp"
-            android:paddingTop="30dp"
+            android:paddingTop="50dp"
             android:text="@string/greetingText1"
             android:textColor="@color/textColor"
             android:textSize="32sp"
@@ -25,12 +26,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="20dp"
+            android:paddingTop="30dp"
             android:paddingHorizontal="5dp"
             android:text="@string/greetingText2"
             android:textColor="@color/textColor"
             android:textSize="26sp"
-            android:paddingBottom="20dp"/>
+            android:paddingBottom="35dp"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -128,7 +129,8 @@
                         android:layout_height="wrap_content"
                         android:text="M"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:checked="true"/>
                     <RadioButton
                         android:id="@+id/femaleRadio"
                         android:layout_width="wrap_content"
@@ -185,7 +187,8 @@
                     android:layout_height="wrap_content"
                     android:text="Gain Muscle"
                     android:textColor="@color/textColor"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:checked="true"/>
                 <RadioButton
                     android:id="@+id/slimRadio"
                     android:layout_width="wrap_content"
