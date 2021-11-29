@@ -213,13 +213,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="SMS Plan" />
-
-            <Button
-                android:id="@+id/planSocialButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Post Plan" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

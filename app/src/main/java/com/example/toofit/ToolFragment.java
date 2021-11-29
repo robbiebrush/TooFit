@@ -178,11 +178,9 @@ public class ToolFragment extends Fragment {
         emailPlanButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] emailAddress = {""};
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:"));
-                intent.putExtra(Intent.EXTRA_EMAIL, emailAddress);
-                intent.putExtra(Intent.EXTRA_TEXT, " ");
+                intent.putExtra(Intent.EXTRA_TEXT, "Protein: " + planInfo[0] + " Carbs: " + planInfo[1] + " Fat: " + planInfo[2] + " Daily Calories: " + planInfo[3]);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{
@@ -196,7 +194,7 @@ public class ToolFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("smsto:"));
-                intent.putExtra("sms_body", " ");
+                intent.putExtra("sms_body", "Protein: " + planInfo[0] + " Carbs: " + planInfo[1] + " Fat: " + planInfo[2] + " Daily Calories: " + planInfo[3]);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{
@@ -204,19 +202,6 @@ public class ToolFragment extends Fragment {
                 }
             }
         });
-        Button planSocialButt = view.findViewById(R.id.planSocialButton);
-        planSocialButt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ReserveIntents.ACTION_RESERVE_TAXI_RESERVATION);
-                if(intent.resolveActivity(getActivity().getPackageManager()) != null){
-                    startActivity(intent);
-                }else{
-                    Snackbar.make(getView(), "No app installed", Snackbar.LENGTH_SHORT).show();
-                }
-            }
-        });
-
         return view;
     }
 }
