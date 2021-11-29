@@ -11,7 +11,9 @@
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_main_to_plan"
-            app:destination="@id/nav_tool" />
+            app:destination="@id/nav_tool"
+            app:enterAnim="@anim/in_from_right"
+            app:exitAnim="@anim/out_to_left" />
     </fragment>
 
     <fragment
