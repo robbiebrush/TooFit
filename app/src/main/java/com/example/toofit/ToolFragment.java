@@ -47,6 +47,7 @@ public class ToolFragment extends Fragment {
     public String[] planCalculator(Integer userWeight, Integer userHeight, Integer userDesiredWeight,
                                     Integer userAge, String userSex, String userObjective) {
         int dailyCalsToChangeWeight1LbInWeek = 600;
+        //Calculates daily calories used currently
         double currentDailyCalsMale = (88.362 + (13.397 * userWeight) + (4.799 * userHeight) - (5.677 * userAge)) * 1.25;
         double currentDailyCalsFemale = (447.593 + (9.247 * userWeight) + (3.098 * userHeight) - (4.33 * userAge)) * 1.25;
 
@@ -56,13 +57,14 @@ public class ToolFragment extends Fragment {
         double newDailyCals;
         String tips;
         String details;
-
+        //Calculates number of weeks to achieve weight difference at 1lb per week
         double weeksToLose = userWeight - userDesiredWeight;
         double weeksToGain = userDesiredWeight - userWeight;
 
-
         if (userObjective == "slim") {
             if (userSex == "male") {
+                //Calculates daily needed calories to achieve goal at 1lb/week, then ratios specific weekly calories per macro,
+                // converts to grams
                 dailyProteinGrams = ((currentDailyCalsMale - dailyCalsToChangeWeight1LbInWeek) * 0.25) / 4;
                 dailyCarbsGrams = ((currentDailyCalsMale - dailyCalsToChangeWeight1LbInWeek) * 0.6) / 4;
                 dailyFatGrams = ((currentDailyCalsMale - dailyCalsToChangeWeight1LbInWeek) * 0.15) / 9;
@@ -104,6 +106,7 @@ public class ToolFragment extends Fragment {
                     "\n\n-All nutritional information is a generalized approximation of your otherwise individual bodies needs. Not exact." +
                     "\n\n-Please contact a doctor or our health hotlines with serious health inquiries or crises.";
         }
+        //Formats output
         String dailyProteinStr = String.format("%.1f",dailyProteinGrams) + "g";
         String dailyCarbsStr = String.format("%.1f",dailyCarbsGrams) + "g";
         String dailyFatStr = String.format("%.1f",dailyFatGrams) + "g";
@@ -165,11 +168,11 @@ public class ToolFragment extends Fragment {
         dailyCalsView = view.findViewById(R.id.calsPerDayView);
         dailyCalsView.setText(planInfo[3]);
 
-        planDetailsView = view.findViewById(R.id.detailsView);
-        planDetailsView.setText(planInfo[5]);
-
         planTipsView = view.findViewById(R.id.tipsView);
         planTipsView.setText(planInfo[4]);
+
+        planDetailsView = view.findViewById(R.id.detailsView);
+        planDetailsView.setText(planInfo[5]);
 
         Button emailPlanButt = view.findViewById(R.id.emailPlanButton);
         emailPlanButt.setOnClickListener(new View.OnClickListener() {
