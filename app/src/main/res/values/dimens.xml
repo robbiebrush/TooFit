@@ -13,4 +13,6 @@
     <dimen name="padding10">10dp</dimen>
     <dimen name="padding20">20dp</dimen>
     <dimen name="padding30">30dp</dimen>
+    <dimen name="listPadding">2dp</dimen>
+    <dimen name="recyclerPadding">55dp</dimen>
 </resources>

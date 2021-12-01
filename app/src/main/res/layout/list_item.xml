@@ -2,27 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingRight="2dp"
-    android:paddingLeft="2dp">
+    android:paddingRight="@dimen/listPadding"
+    android:paddingLeft="@dimen/listPadding">
 
     <TextView
         android:id="@+id/creditFor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="6dp"
-        android:text="Picture:"
+        android:padding="@dimen/padding8"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
+        android:textSize="@dimen/form_text_size"
         android:textStyle="bold"
         android:layout_weight="1"/>
     <TextView
         android:id="@+id/creditTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="6dp"
-        android:text="Momma"
+        android:padding="@dimen/padding8"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
+        android:textSize="@dimen/form_text_size"
         android:layout_weight="1"/>
 
 </LinearLayout>

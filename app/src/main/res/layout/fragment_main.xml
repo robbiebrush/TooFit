@@ -169,7 +169,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Objective:"
+                android:text="@string/objective"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/form_text_size"
                 android:gravity="center"
@@ -185,7 +185,7 @@
                     android:id="@+id/gainRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gain Muscle"
+                    android:text="@string/gain"
                     android:textColor="@color/textColor"
                     android:textStyle="bold"
                     android:checked="true"/>
@@ -193,7 +193,7 @@
                     android:id="@+id/slimRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Slim Out"
+                    android:text="@string/slim"
                     android:textColor="@color/textColor"
                     android:textStyle="bold"/>
 
@@ -205,46 +205,46 @@
                 android:layout_height="wrap_content"
                 android:text="@string/getPlan"
                 android:gravity="center"
-                android:paddingBottom="20dp" />
+                android:paddingBottom="@dimen/padding20" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:paddingTop="20dp"
-            android:paddingHorizontal="8dp"
+            android:paddingTop="@dimen/padding20"
+            android:paddingHorizontal="@dimen/padding8"
             android:text="@string/appSummary"
             android:textColor="@color/textColor"
-            android:textSize="22sp"
-            android:paddingBottom="20dp"/>
+            android:textSize="@dimen/text_size"
+            android:paddingBottom="@dimen/padding20"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
+            android:paddingTop="@dimen/padding8">
 
             <Button
                 android:id="@+id/webButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Food Guide" />
+                android:text="@string/guide" />
 
             <Button
                 android:id="@+id/mapButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Gyms Nearby" />
+                android:text="@string/nearby" />
 
             <Button
                 android:id="@+id/cabButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Call Cab" />
+                android:text="@string/cab" />
 
         </LinearLayout>
 
@@ -258,21 +258,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Call Hotline" />
+                android:text="@string/callHot" />
 
             <Button
                 android:id="@+id/smsHotlineButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="SMS Hotline" />
+                android:text="@string/smsHot" />
 
             <Button
                 android:id="@+id/contactUsButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Contact Us" />
+                android:text="@string/contact" />
 
         </LinearLayout>
     </LinearLayout>
