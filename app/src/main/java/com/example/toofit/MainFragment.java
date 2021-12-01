@@ -124,18 +124,6 @@ public class MainFragment extends Fragment {
                 }
             }
         });
-        Button cabButt = view.findViewById(R.id.cabButton);
-        cabButt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ReserveIntents.ACTION_RESERVE_TAXI_RESERVATION);
-                if(intent.resolveActivity(getActivity().getPackageManager()) != null){
-                    startActivity(intent);
-                }else{
-                    Snackbar.make(getView(), "No app installed", Snackbar.LENGTH_SHORT).show();
-                }
-            }
-        });
         Button phoneHotlineButt = view.findViewById(R.id.phoneHotlineButton);
         phoneHotlineButt.setOnClickListener(new View.OnClickListener() {
             @Override
