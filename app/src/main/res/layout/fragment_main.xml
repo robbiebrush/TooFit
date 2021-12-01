@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/introGreet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -119,7 +120,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_gravity="end">
+                    android:layout_gravity="end"
+                    android:id="@+id/sexInput">
 
                     <RadioButton
                         android:id="@+id/maleRadio"
@@ -127,7 +129,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/male"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:checked="true"/>
                     <RadioButton
                         android:id="@+id/femaleRadio"
                         android:layout_width="wrap_content"
@@ -166,7 +169,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/desiredMuscle"
+                android:text="Objective:"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/form_text_size"
                 android:gravity="center"
@@ -176,27 +179,21 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center">
-
+                android:gravity="center"
+                android:id="@+id/objectiveInput">
                 <RadioButton
-                    android:id="@+id/extremeRadio"
+                    android:id="@+id/gainRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/extreme"
+                    android:text="Gain Muscle"
                     android:textColor="@color/textColor"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:checked="true"/>
                 <RadioButton
-                    android:id="@+id/veryRadio"
+                    android:id="@+id/slimRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/very"
-                    android:textColor="@color/textColor"
-                    android:textStyle="bold"/>
-                <RadioButton
-                    android:id="@+id/averageRadio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/average"
+                    android:text="Slim Out"
                     android:textColor="@color/textColor"
                     android:textStyle="bold"/>
 

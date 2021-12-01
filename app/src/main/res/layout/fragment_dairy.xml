@@ -10,8 +10,8 @@
         android:layout_height="match_parent"
         tools:context=".SideNavFrags.DairyFragment"
         android:orientation="vertical"
-        android:background="@color/white"
-        android:padding="@dimen/padding10">
+        android:background="@color/blue_200"
+        android:padding="10dp">
 
         <fragment
             android:layout_width="match_parent"

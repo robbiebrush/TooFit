@@ -1,22 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-        <PreferenceCategory app:title="Preferences">
+        <PreferenceCategory app:title="@string/personal_header">
 
             <EditTextPreference
                 app:key="name"
                 app:title="Name"
+                app:defaultValue=""
                 app:useSimpleSummaryProvider="true" />
 
+            <EditTextPreference
+                app:key="email"
+                app:title="Email"
+                app:defaultValue=""
+                app:useSimpleSummaryProvider="true" />
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="@string/app_header">
             <ListPreference
-                app:defaultValue="normal"
+                app:title="Text Size"
+                app:defaultValue="Normal"
                 app:entries="@array/font_size_names"
                 app:entryValues="@array/font_size_values"
-                app:key="font"
-                app:title="Font Size"
+                app:key="textsize"
                 app:useSimpleSummaryProvider="true" />
-
         </PreferenceCategory>
     </PreferenceScreen>

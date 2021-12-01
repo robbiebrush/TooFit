@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Daily Portions"
+                    android:text="Daily Macros"
                     android:textStyle="bold"
                     android:textColor="@color/textColor"
                     android:textSize="32dp"/>
@@ -39,15 +39,16 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Proteins:"
+                            android:text="Protein:"
                             android:textColor="@color/textColor"
                             android:textSize="26dp"
                             android:layout_weight="1"/>
 
                         <TextView
+                            android:id="@+id/proteinMacroView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Proteins:"
+                            android:text=""
                             android:textColor="@color/textColor"
                             android:textSize="26dp"
                             android:layout_weight="1"
@@ -62,15 +63,16 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Grains:"
+                            android:text="Carbs:"
                             android:textColor="@color/textColor"
                             android:textSize="26dp"
                             android:layout_weight="1"/>
 
                         <TextView
+                            android:id="@+id/carbsMacroView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Proteins:"
+                            android:text=""
                             android:textColor="@color/textColor"
                             android:textSize="26dp"
                             android:layout_weight="1"
@@ -85,15 +87,16 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vegetables:"
+                            android:text="Fat:"
                             android:textColor="@color/textColor"
                             android:textSize="26dp"
                             android:layout_weight="1"/>
 
                         <TextView
+                            android:id="@+id/fatMacroView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Proteins:"
+                            android:text=""
                             android:textColor="@color/textColor"
                             android:textSize="26dp"
                             android:layout_weight="1"
@@ -101,80 +104,29 @@
                             android:paddingRight="8dp"/>
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Fruits:"
-                            android:textColor="@color/textColor"
-                            android:textSize="26dp"
-                            android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calories/ Day:"
+                        android:textColor="@color/textColor"
+                        android:textSize="26dp"
+                        android:layout_weight="1"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Proteins:"
-                            android:textColor="@color/textColor"
-                            android:textSize="26dp"
-                            android:layout_weight="1"
-                            android:gravity="right"
-                            android:paddingRight="8dp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Dairy:"
-                            android:textColor="@color/textColor"
-                            android:textSize="26dp"
-                            android:layout_weight="1"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="3.0g"
-                            android:textColor="@color/textColor"
-                            android:textSize="26dp"
-                            android:layout_weight="1"
-                            android:gravity="right"
-                            android:paddingRight="8dp"/>
-                    </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:orientation="vertical"
-                android:background="@drawable/border">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Exercise Tips"
-                    android:textColor="@color/textColor"
-                    android:textStyle="bold"
-                    android:textSize="32dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tipssss"
-                    android:textColor="@color/textColor"
-                    android:textSize="26dp" />
+                    <TextView
+                        android:id="@+id/calsPerDayView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.0g"
+                        android:textColor="@color/textColor"
+                        android:textSize="26dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="8dp"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -200,11 +152,45 @@
                     android:textSize="32dp" />
 
                 <TextView
+                    android:id="@+id/detailsView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Detailsss"
+                    android:text="Details"
                     android:textColor="@color/textColor"
-                    android:textSize="26dp" />
+                    android:textSize="20dp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exercise Tips"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:id="@+id/tipsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tips"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:padding="8dp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -227,13 +213,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="SMS Plan" />
-
-            <Button
-                android:id="@+id/planSocial"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Post Plan" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
