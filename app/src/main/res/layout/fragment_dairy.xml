@@ -11,7 +11,7 @@
         tools:context=".SideNavFrags.DairyFragment"
         android:orientation="vertical"
         android:background="@color/white"
-        android:padding="10dp">
+        android:padding="@dimen/padding10">
 
         <fragment
             android:layout_width="match_parent"
@@ -19,14 +19,14 @@
             android:id="@+id/dairyFacts"
             android:name="com.example.toofit.RecyclerView.FactFrags.DairyFactFragment"
             tools:layout="@layout/fragment_dairy_fact"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp" />
+            android:paddingTop="@dimen/padding20"
+            android:paddingBottom="@dimen/padding20" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingTop="@dimen/padding10"
+            android:paddingBottom="@dimen/padding10">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -38,16 +38,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/options"
-                    android:textSize="28sp"
+                    android:textSize="@dimen/title_size"
                     android:textStyle="bold"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="20dp" />
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingBottom="@dimen/padding20" />
 
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/exPicViewPager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingBottom="20dp"
+                    android:paddingBottom="@dimen/padding20"
                     android:layout_gravity="center"/>
             </LinearLayout>
         </LinearLayout>

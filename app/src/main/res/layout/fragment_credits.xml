@@ -5,18 +5,18 @@
         tools:context=".ListView.CreditsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:padding="@dimen/padding10">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="@drawable/border"
-            android:padding="10dp">
+            android:padding="@dimen/padding10">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingHorizontal="8dp"
+                    android:paddingHorizontal="@dimen/padding8"
                     android:orientation="vertical">
 
                         <ListView
