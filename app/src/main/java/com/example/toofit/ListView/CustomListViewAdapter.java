@@ -27,11 +27,11 @@ public class CustomListViewAdapter extends ArrayAdapter<Credit> {
 
         if(convertView == null){
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
-            TextView creditFor = convertView.findViewById(R.id.creditFor);
-            creditFor.setText(getItem(position).getCreditFor());
-            TextView creditTo = convertView.findViewById(R.id.creditTo);
-            creditTo.setText(getItem(position).getTo());
         }
+        TextView creditFor = convertView.findViewById(R.id.creditFor);
+        creditFor.setText(getItem(position).getCreditFor());
+        TextView creditTo = convertView.findViewById(R.id.creditTo);
+        creditTo.setText(getItem(position).getTo());
 
         return convertView;
     }
