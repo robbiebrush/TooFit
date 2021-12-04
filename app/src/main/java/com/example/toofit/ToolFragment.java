@@ -77,7 +77,7 @@ public class ToolFragment extends Fragment {
             }
             tips = "-The best way to lose body fat is High Intensity Interval Training (HIIT). This includes sprinting, biking, combat arts, explosive/ demanding weight training, and others." +
                     "\n\n-Sticking to your macros and calories with three main meals a day and at least 60 minutes of HIIT will lead to the most progress." +
-                    "\n\n-Always staying hydrated and giving targeted muscles bidaily rest to build proteins/remove waste will also lead to the most progress and prevent injury.";
+                    "\n\n-Always staying hydrated and giving targeted muscles rest to build proteins/remove waste will also lead to the most progress and prevent injury.";
             details = "-Should take " + weeksToLose + " weeks to achieve at 1lb lost per week." +
                     "\n\n-Prioritize carbs and protein with low fat to best achieve a low body fat/ toned definition." +
                     "\n\n-Based on experiencing an elevated heart rate for 0-30 minutes a day." +
