@@ -13,15 +13,11 @@
                 app:title="Email"
                 app:defaultValue=""
                 app:useSimpleSummaryProvider="true" />
-        </PreferenceCategory>
 
-        <PreferenceCategory app:title="@string/app_header">
-            <ListPreference
-                app:title="Text Size"
-                app:defaultValue="Normal"
-                app:entries="@array/font_size_names"
-                app:entryValues="@array/font_size_values"
-                app:key="textsize"
+            <EditTextPreference
+                app:key="number"
+                app:title="Phone Number"
+                app:defaultValue=""
                 app:useSimpleSummaryProvider="true" />
         </PreferenceCategory>
     </PreferenceScreen>

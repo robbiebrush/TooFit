@@ -1,10 +1,12 @@
 package com.example.toofit;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -147,6 +149,11 @@ public class ToolFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_tool, container, false);
+
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String userEmail = sp.getString("email", "");
+        String userNumber = sp.getString("number", "");
+
         Bundle extras = getArguments();
         Integer weight = extras.getInt("WEIGHT");
         Integer height = extras.getInt("HEIGHT");
@@ -179,8 +186,8 @@ public class ToolFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:"));
-                intent.putExtra(Intent.EXTRA_TEXT, "Protein: " + planInfo[0] + " Carbs: " + planInfo[1] + " Fat: " + planInfo[2] + " Daily Calories: " + planInfo[3]);
+                intent.setData(Uri.parse("mailto:" + userEmail));
+                intent.putExtra(Intent.EXTRA_TEXT, "Protein: " + planInfo[0] + "\nCarbs: " + planInfo[1] + "\nFat: " + planInfo[2] + "\nDaily Calories: " + planInfo[3]);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{
@@ -193,8 +200,8 @@ public class ToolFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("smsto:"));
-                intent.putExtra("sms_body", "Protein: " + planInfo[0] + " Carbs: " + planInfo[1] + " Fat: " + planInfo[2] + " Daily Calories: " + planInfo[3]);
+                intent.setData(Uri.parse("smsto:" + userNumber));
+                intent.putExtra("sms_body", "Protein: " + planInfo[0] + "\nCarbs: " + planInfo[1] + "\nFat: " + planInfo[2] + "\nDaily Calories: " + planInfo[3]);
                 if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(intent);
                 }else{

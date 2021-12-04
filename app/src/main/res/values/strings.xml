@@ -8,13 +8,13 @@
     <string name="greetingText1">Hello, Welcome to TooFit</string>
     <string name="greetingText2">Fill out the fields below to use the Body Transformation Tool.</string>
     <string name="appSummary">TooFit is an informational Nutrition app, created to help guide anyone to their personal physique and health standards. It was also created to pass Android Development 2. We offer specific and concise information regarding each nutritional food group to help educate users of exactly what is being put in their bodies everyday. Above is our Body Transformation Tool. If you haven\'t already, fill out the fields and click \'Get Plan\' to receive a personalized outline of what you should be consuming and how you should be exercising everyday to reach your specified fitness goals. We hope we can be a helping hand in you becoming a better you.</string>
-    <string name="weight">Weight:</string>
-    <string name="height">Height:</string>
+    <string name="weight">Weight(kg):</string>
+    <string name="height">Height(cm):</string>
     <string name="sex">Sex:</string>
     <string name="age">Age:</string>
     <string name="male">M</string>
     <string name="female">F</string>string>
-    <string name="desiredWeight">Desired Weight:</string>
+    <string name="desiredWeight">Desired Weight(kg):</string>
     <string name="desiredMuscle">Desired Muscle Definition:</string>
     <string name="objective">Objective:</string>
     <string name="gain">Gain Muscle</string>
