@@ -10,6 +10,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
@@ -85,8 +86,8 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-        SharedPreferences sp = getContext().getSharedPreferences("name", Context.MODE_PRIVATE);
-        String userName = sp.getString("name", "");
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String userName = " " + sp.getString("name", "");
         intro = view.findViewById(R.id.introGreet);
         intro.setText("Hello" + userName + ", Welcome to TooFit");
 

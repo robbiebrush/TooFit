@@ -76,7 +76,7 @@ public class CreditsFragment extends Fragment {
         arrayList.add(new Credit("What Fruits Do/ Why They're Needed:", "https://www.medicalnewstoday.com/articles/324431"));
         arrayList.add(new Credit("How Much Fruit Daily:", "https://www.healthline.com/nutrition/how-much-fruit-per-day"));
         arrayList.add(new Credit("Fruit Tip 3:", "https://www.abc.net.au/news/health/2017-04-21/can-you-have-too-many-antioxidants/8457336"));
-        arrayList.add(new Credit("What Dairy Does/ Why It's Needed:", "https://www.myplate.gov/eat-healthy/dairy\nhttps://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy"));
+        arrayList.add(new Credit("What Dairy Does/ Why It's Needed:", "https://www.myplate.gov/eat-healthy/dairy\n\nhttps://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy"));
         arrayList.add(new Credit("Protein Pic Steak: ", "https://www.pexels.com/photo/photo-of-steak-and-french-fries-on-gray-plate-3535383/"));
         arrayList.add(new Credit("Protein Pic Drumsticks: ", "https://www.pexels.com/photo/close-up-photo-of-cooked-chicken-2611917/"));
         arrayList.add(new Credit("Protein Pic Shishkabob: ", "https://www.pexels.com/photo/plate-of-barbeques-on-dining-table-2689419/"));
