@@ -69,7 +69,7 @@ public class GrainsFactFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_grains_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
         facts.add(new Fact("What do they do?", "Grains are one of the best sources of energy we can obtain due to the amount of complex carbohydrates within them. Whole grains" +
-                " are also a great source of some nutrients such as B vitamins (thiamin, riboflavin, etc.), minerals (iron, magnesium, etc.) and " +
+                " are also a great source of some nutrients such as B vitamins (thiamine, riboflavin, etc.), minerals (iron, magnesium, etc.) and " +
                 "fiber. Fiber also improves digestion substantially, and fills your stomach quickly."));
         facts.add(new Fact("Why are they needed?", "No one needs grains. They are not essential to humans as all the vitamins, minerals, and energy are plentifully available in" +
                 " other foods. However, in your typical grain food item, the energy and fibre supplies are abundant. Energy " +

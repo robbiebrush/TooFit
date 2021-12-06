@@ -2,7 +2,7 @@
     <string name="app_name">TooFit</string>
     <string name="settingsStr">Settings</string>
     <string name="nav_header_title">TooFit</string>
-    <string name="nav_header_subtitle">Nutritional Categories</string>
+    <string name="nav_header_subtitle">Food Groups</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="greetingText1">Hello, Welcome to TooFit</string>

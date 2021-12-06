@@ -68,8 +68,8 @@ public class ProteinsFactFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_proteins_fact, container, false);
         ArrayList<Fact> facts = new ArrayList<>();
         facts.add(new Fact("What do they do?", "Proteins are chemical \'building blocks\' called amino acids. They are mainly responsible for building/ repairing muscles and bones. They are also used to create hormones and enzymes, and can be used as an energy source as well."));
-        facts.add(new Fact("Why are they needed?", "We need proteins to maintain/ grow our bodies' size, strength, physcial endurance, and durability in order to " +
-                "better execute tasks in our lives. When energy is exerted in the contracting or extending of muscles, muscle fibers repsonsible for such actions " +
+        facts.add(new Fact("Why are they needed?", "We need proteins to maintain/ grow our bodies' size, strength, physical endurance, and durability in order to " +
+                "better execute tasks in our lives. When energy is exerted in the contracting or extending of muscles, muscle fibers responsible for such actions " +
                 "are ripped and stretched apart. Consumed proteins then have the primary function of filling those gaps with new proteins, growing the muscle in size, " +
                 "strength, etc. This is the same process for bones, relative to their frequency and degree of stress. Creating/ regulating hormones and enzymes also " +
                 "keeps our bodies' and minds' chemically balanced."));
